@@ -1,0 +1,13 @@
+version: "3"
+services:
+        nodejs:
+                build: ./rest-crud/
+                ports:
+                - 3000:3000
+                command: ["node","server.js"]
+                depends_on:
+                - "mysql"
+        mysql:
+                build: ./mysql-app
+                ports:
+                - 3306:3306
