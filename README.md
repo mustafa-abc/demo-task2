@@ -1,1 +1,1 @@
-# Demo-task2
+# Demonstration of deploying NodeJS Application with database on Docker
